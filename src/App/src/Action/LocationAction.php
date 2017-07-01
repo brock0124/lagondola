@@ -34,13 +34,11 @@ class LocationAction implements ServerMiddlewareInterface
 
     public function process(ServerRequestInterface $request, DelegateInterface $delegate)
     {
-        $location = $_GET['location'];
+        $location = strtolower($_GET['location']);
         if($this->checkLocation($location) == 404)
         {
             return new HtmlResponse($this->template->render('error::404'));
         }
-
-        $menu = new MenuObject();
 
         $data = [];
 
@@ -48,10 +46,18 @@ class LocationAction implements ServerMiddlewareInterface
 
         $data['title'] = $data['location'] . " LaGondola";
 
-        $data['menu'] = $menu->getLocationMenu($location);
+        $data['address'] =  "700 E War Memorial Dr";
+
+        $data['state'] = 'Peoria, IL 61614';
+
+        $data['phone'] = '(309) 688.0800';
+
+        $data['hours'] = $this->getHours($location);
+
+        //$data['menu'] = $menu->getLocationMenu($location);
 
 
-        return new HtmlResponse($this->template->render('app::location', $data));
+        return new HtmlResponse($this->template->render('app::locations', $data));
     }
 
     public function checkLocation($location)
@@ -68,6 +74,21 @@ class LocationAction implements ServerMiddlewareInterface
             return 404;
         } else {
             return 200;
+        }
+    }
+
+    public function getHours($location)
+    {
+        switch ($location) {
+            case 'peoria':
+                return "Mon - Sat: 11am - 9pm";
+                break;
+            case 'morton':
+                return "Mon - Sat: 10:30am - 9pm";
+                break;
+            case "cake":
+                echo "i is cake";
+                break;
         }
     }
 }

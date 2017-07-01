@@ -32,9 +32,9 @@ class HomePageAction implements ServerMiddlewareInterface
 
         $data['title'] = "LaGondola Spaghetti House";
 
-        $data['pic'] =  "<img src='images/dickandpatty.png' alt='img' width=\"250\" height=\"220\" />";
+        $data['address'] =  "2233 Hawthorne Pl";
 
-        $data['name'] = 'LaGondola';
+        $data['state'] = 'Washington, IL, 61571';
 
         $data['about'] = "Established in 1982, LaGondola Spaghetti House was based on the founder’s simple belief in 
         homemade food and excellent service. For over 30 years, nothing has changed. Wholesome ingredients prepared 

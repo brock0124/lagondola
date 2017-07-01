@@ -40,6 +40,7 @@ class ConfigProvider
             'factories'  => [
                 Action\HomePageAction::class => Action\HomePageFactory::class,
                 Action\LocationAction::class => Action\LocationFactory::class,
+                Action\AboutAction::class => Action\AboutFactory::class,
             ],
         ];
     }

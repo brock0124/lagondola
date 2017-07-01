@@ -29,3 +29,4 @@
 $app->get('/', App\Action\HomePageAction::class, 'home');
 $app->get('/api/ping', App\Action\PingAction::class, 'api.ping');
 $app->get('/location', App\Action\LocationAction::class, 'location');
+$app->get('/about', App\Action\AboutAction::class, 'about');
