@@ -34,6 +34,8 @@ class LocationAction implements ServerMiddlewareInterface
 
     public function process(ServerRequestInterface $request, DelegateInterface $delegate)
     {
+        //die(var_dump($request->getUri()));
+
         $location = strtolower($_GET['location']);
         if($this->checkLocation($location) == 404)
         {
@@ -54,6 +56,8 @@ class LocationAction implements ServerMiddlewareInterface
 
         $data['hours'] = $this->getHours($location);
 
+        $data['map'] = '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3027.1141146900213!2d-89.65395138508984!3d40.64941484937986!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880a5f6dd87af4f9%3A0x63f11ab7059be4a!2sLa+Gondola+Spaghetti+House!5e0!3m2!1sen!2sus!4v1498941810290" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>';
+
         //$data['menu'] = $menu->getLocationMenu($location);
 
 
@@ -65,9 +69,15 @@ class LocationAction implements ServerMiddlewareInterface
         $locations = [
             'peoria',
             'morton',
-            'bloomington',
+            'bloomington-vernon',
+            'bloomington-main',
             'pekin',
-            'creve cour',
+            'creve-couer',
+            'bartonville',
+            'chillicothe',
+            'galesburg',
+            'kewanee',
+            'quincy',
         ];
 
         if(!in_array($location, $locations)){
