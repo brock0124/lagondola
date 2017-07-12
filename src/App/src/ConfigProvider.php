@@ -36,6 +36,7 @@ class ConfigProvider
             'invokables' => [
                 Action\PingAction::class => Action\PingAction::class,
                 Action\MenuObject::class => Action\MenuObject::class,
+                Action\StoreObject::class => Action\StoreObject::class,
             ],
             'factories'  => [
                 Action\HomePageAction::class => Action\HomePageFactory::class,

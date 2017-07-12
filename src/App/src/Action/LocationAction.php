@@ -19,6 +19,8 @@ use Zend\Expressive\Plates\PlatesRenderer;
 use Zend\Expressive\Twig\TwigRenderer;
 use Zend\Expressive\ZendView\ZendViewRenderer;
 use App\Action\MenuObject;
+use App\Action\StoreObject;
+use App\Action\StoreInformation;
 
 class LocationAction implements ServerMiddlewareInterface
 {
@@ -42,21 +44,25 @@ class LocationAction implements ServerMiddlewareInterface
             return new HtmlResponse($this->template->render('error::404'));
         }
 
+        $store = new StoreInformation;
+        $store = $store->createStore($location);
+        //die(var_dump($store));
+
         $data = [];
 
         $data['location'] = ucfirst($_GET['location']);
 
-        $data['title'] = $data['location'] . " LaGondola";
+        $data['title'] = $store->getTitle();
 
-        $data['address'] =  "700 E War Memorial Dr";
+        $data['address'] = $store->getAddress();
 
-        $data['state'] = 'Peoria, IL 61614';
+        $data['state'] = $store->getState();
 
-        $data['phone'] = '(309) 688.0800';
+        $data['phone'] = $store->getPhone();
 
-        $data['hours'] = $this->getHours($location);
+        $data['hours'] = $store->getHours();
 
-        $data['map'] = '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3027.1141146900213!2d-89.65395138508984!3d40.64941484937986!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880a5f6dd87af4f9%3A0x63f11ab7059be4a!2sLa+Gondola+Spaghetti+House!5e0!3m2!1sen!2sus!4v1498941810290" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>';
+        $data['map'] = $store->getMap();
 
         //$data['menu'] = $menu->getLocationMenu($location);
 

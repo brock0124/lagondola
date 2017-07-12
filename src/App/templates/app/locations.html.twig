@@ -93,13 +93,27 @@
                                 <li><a href="/locations.html">Locations</a>
                                     <!-- RD Navbar Dropdown-->
                                     <ul class="rd-navbar-dropdown">
-                                        <li><a href="/location?location=peoria">Peoria</a>
+                                        <li><a href="/location?location=bartonville">Bartonville</a>
+                                        </li>
+                                        <li><a href="/location?location=bloomington-main">Bloomington - Main St.</a>
+                                        </li>
+                                        <li><a href="/location?location=bloomington-vernon">Bloomington - Vernon</a>
+                                        </li>
+                                        <li><a href="/location?location=chillicothe">Chillicothe</a>
+                                        </li>
+                                        <li><a href="/location?location=creve-couer">Creve Couer</a>
+                                        </li>
+                                        <li><a href="/location?location=galesburg">Galesburg</a>
+                                        </li>
+                                        <li><a href="/location?location=kewanee">Kewanee</a>
                                         </li>
                                         <li><a href="/location?location=morton">Morton</a>
                                         </li>
-                                        <li><a href="gallery-masonry.html">Masonry Gallery</a>
+                                        <li><a href="/location?location=peoria">Peoria</a>
                                         </li>
-                                        <li><a href="gallery-condensed.html">Grid without Padding</a>
+                                        <li><a href="/location?location=pekin">Pekin</a>
+                                        </li>
+                                        <li><a href="/location?location=quincy">Quincy</a>
                                         </li>
                                     </ul>
                                 </li>
@@ -181,7 +195,7 @@
                     <!-- Image Left & Right-->
                     <div class="cell-lg-8">
                         <div class="offset-top-50 offset-md-top-80">
-                            <h4 class="font-default">{{ address }} <br> {{ state }}</h4>
+                            <h4 class="font-default">{{ title }}</h4>
                             <div class="range">
                                 <div class="cell-sm-6">
                                     <figure>{% autoescape false %}
@@ -190,8 +204,11 @@
                                     </figure>
                                 </div>
                                 <div class="cell-sm-6 offset-top-26 offset-sm-top-0">
-                                    <h5>Hours</h5>
-                                    <h6>{{ hours }}</h6>
+                                    <ul class="list-marked">
+                                        <li> <h5><b>{{ address }} <br> {{ state }}</b></h5></li>
+                                        <li> <h5><b>Hours</b>: {{ hours }}</h5></li>
+                                        <li> <h5><b>Phone</b>: {{ phone }}</h5></li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
@@ -207,6 +224,7 @@
                             </div>
                     </div>
                 </div>
+            </div>
             </div>
         </section>
 
