@@ -56,9 +56,9 @@ class ConfigProvider
     {
         return [
             'paths' => [
-                'app'    => [__DIR__ . '/../templates/app'],
-                'error'  => [__DIR__ . '/../templates/error'],
-                'layout' => [__DIR__ . '/../templates/layout'],
+                'app'    => ['templates/app'],
+                'error'  => ['templates/error'],
+                'layout' => ['templates/layout'],
             ],
         ];
     }

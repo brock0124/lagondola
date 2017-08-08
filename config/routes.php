@@ -32,4 +32,3 @@ $app->get('/location', App\Action\LocationAction::class, 'location');
 $app->get('/locations', App\Action\LocationAction::class, 'locations');
 $app->get('/about', App\Action\AboutAction::class, 'about');
 $app->post('/contact', App\Action\ContactAction::class)->setName('contact');
-

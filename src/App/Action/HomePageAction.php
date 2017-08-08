@@ -30,6 +30,8 @@ class HomePageAction implements ServerMiddlewareInterface
 
         $data = [];
 
+        $data['style'] = '<style type="text/css">  body {background: #2b2c2f !important; color: whitesmoke !important; }</style>';
+
         $data['title'] = "LaGondola Spaghetti House";
 
         $data['address'] =  "2233 Hawthorne Pl";
@@ -45,8 +47,7 @@ concept—no shortcuts. As a result, our most valued patrons have long enjoyed a
 smiles, and incomparable customer value.
 We at LaGondola Spaghetti House are continuing to build upon our rich family Heritage, which for over 29 years still 
 makes us ... The Best Deal in Town.
-
 ";
-        return new HtmlResponse($this->template->render('app::index', $data));
+    return new HtmlResponse($this->template->render('app::index', $data));
     }
 }
