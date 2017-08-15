@@ -30,7 +30,22 @@ class HomePageAction implements ServerMiddlewareInterface
 
         $data = [];
 
-        $data['style'] = '<style type="text/css">  body {background: #2b2c2f !important; color: whitesmoke !important; }</style>';
+        $data['style'] = '<style type="text/css">  body {background: #2b2c2f !important; color: whitesmoke !important; }     body {
+      background: #2b2c2f !important;
+      color: whitesmoke !important;
+    }
+    p {
+      color: white; !important;
+    }
+    h3 {
+      color: white; !important;
+    }
+    h6 {
+    color: white; !important;
+    }
+    q {
+      color: white; !important;
+    }</style>';
 
         $data['title'] = "LaGondola Spaghetti House";
 
