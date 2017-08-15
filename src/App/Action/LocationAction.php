@@ -37,6 +37,7 @@ class LocationAction implements ServerMiddlewareInterface
     public function process(ServerRequestInterface $request, DelegateInterface $delegate)
     {
         //die(var_dump($request->getUri()));
+        include 'Styles.php';
 
         $location = strtolower($_GET['location']);
         if($this->checkLocation($location) == 404)
@@ -49,6 +50,10 @@ class LocationAction implements ServerMiddlewareInterface
         //die(var_dump($store));
 
         $data = [];
+
+        $data['nav_bar'] = $nav_bar;
+
+        $data['style'] = $home_page_css;
 
         $data['location'] = ucfirst($_GET['location']);
 

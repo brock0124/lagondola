@@ -28,24 +28,13 @@ class HomePageAction implements ServerMiddlewareInterface
     public function process(ServerRequestInterface $request, DelegateInterface $delegate)
     {
 
+        include 'Styles.php';
+
         $data = [];
 
-        $data['style'] = '<style type="text/css">  body {background: #2b2c2f !important; color: whitesmoke !important; }     body {
-      background: #2b2c2f !important;
-      color: whitesmoke !important;
-    }
-    p {
-      color: white; !important;
-    }
-    h3 {
-      color: white; !important;
-    }
-    h6 {
-    color: white; !important;
-    }
-    q {
-      color: white; !important;
-    }</style>';
+        $data['style'] = $home_page_css;
+
+        $data['nav_bar'] = $nav_bar;
 
         $data['title'] = "LaGondola Spaghetti House";
 

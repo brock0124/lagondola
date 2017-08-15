@@ -27,8 +27,11 @@ class AboutAction implements ServerMiddlewareInterface
 
     public function process(ServerRequestInterface $request, DelegateInterface $delegate)
     {
+        include 'Styles.php';
 
         $data = [];
+
+        $data['nav_bar'] = $nav_bar;
 
         $data['title'] = "LaGondola Spaghetti House";
 
