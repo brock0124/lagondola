@@ -1,7 +1,7 @@
 .idea
 composer.phar
-
 clover.xml
 coveralls-upload.json
 phpunit.xml
 vendor/
+MailHog_windows_386.exe

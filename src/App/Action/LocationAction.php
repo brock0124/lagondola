@@ -51,9 +51,11 @@ class LocationAction implements ServerMiddlewareInterface
 
         $data = [];
 
-        $data['nav_bar'] = $nav_bar;
+        $data['nav_bar_top'] = $locations_css_top;
 
-        $data['style'] = $home_page_css;
+        $data['nav_bar_bottom'] = $locations_css_bottom;
+
+        $data['style'] = $custom_css;
 
         $data['location'] = ucfirst($_GET['location']);
 

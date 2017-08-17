@@ -59,6 +59,12 @@ pasting the email address below into a new email. Not creating a new message wil
             'port' => 1025
         ]);*/
 
+        $options = new SmtpOptions([
+            'name' => 'mail.lagondola.local',
+            'host' => 'smtp://127.0.0.1',
+            'port' => 1025,
+        ]);
+
         //Production SMTP Options
         /*$options = new SmtpOptions([
             'name' => 'gmail.com',

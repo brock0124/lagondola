@@ -69,7 +69,7 @@ class StoreInformation
             case 'bartonville':
                 return "6100 South Adams Street";
                 break;
-            case 'bloominton-vernon':
+            case 'bloomington-vernon':
                 return "1501 Vernon Avenue";
                 break;
             case 'bloomington-main' :
@@ -108,7 +108,7 @@ class StoreInformation
             case 'bartonville':
                 return "Bartonville, IL 61607";
                 break;
-            case 'bloominton-vernon':
+            case 'bloomington-vernon':
                 return "Bloomington, IL 61701";
                 break;
             case 'bloomington-main' :
@@ -147,7 +147,7 @@ class StoreInformation
             case 'bartonville':
                 return "309.697.1819";
                 break;
-            case 'bloominton-vernon':
+            case 'bloomington-vernon':
                 return "309.664.6363";
                 break;
             case 'bloomington-main' :
@@ -186,7 +186,7 @@ class StoreInformation
             case 'bartonville':
                 return "Bartonville LaGondola";
                 break;
-            case 'bloominton-vernon':
+            case 'bloomington-vernon':
                 return "Bloomington LaGondola - Vernon St.";
                 break;
             case 'bloomington-main' :
@@ -225,7 +225,7 @@ class StoreInformation
             case 'bartonville':
                 return '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3027.1141146900213!2d-89.65395138508984!3d40.64941484937986!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880a5f6dd87af4f9%3A0x63f11ab7059be4a!2sLa+Gondola+Spaghetti+House!5e0!3m2!1sen!2sus!4v1498937347822" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>';
                 break;
-            case 'bloominton-vernon':
+            case 'bloomington-vernon':
                 return '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24275.347131471914!2d-88.99281122288932!3d40.48813026797911!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880b7066c805115d%3A0xfbfb29a09ba6a474!2sLa+Gondola+Spaghetti+%26+Pizza+House!5e0!3m2!1sen!2sus!4v1498938069136" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>';
                 break;
             case 'bloomington-main' :

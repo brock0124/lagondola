@@ -32,7 +32,7 @@ class HomePageAction implements ServerMiddlewareInterface
 
         $data = [];
 
-        $data['style'] = $home_page_css;
+        $data['style'] = $custom_css;
 
         $data['nav_bar'] = $nav_bar;
 

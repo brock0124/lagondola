@@ -21,7 +21,26 @@
 <div class="page text-center">
     <!-- Page Header-->
     {% autoescape false %}
-        {{ nav_bar }}
+        {{ nav_bar_top }}
+    {% endautoescape %}
+    <li>
+        <div class="unit unit-horizontal unit-middle unit-spacing-xs">
+            <div class="unit-left"><span class="icon icon-circle icon-gray-dark icon-xxs mdi mdi-map-marker text-middle"></span></div>
+            <div class="unit-body">
+                <address class="contact-info"><a href="#" class="link-default link-xs"> {{ address }} <br class="visible-md visible-lg"> {{ state }}</a></address>
+            </div>
+        </div>
+    </li>
+    <li>
+        <div class="unit unit-horizontal unit-middle unit-spacing-xs">
+            <div class="unit-left"><span class="icon icon-circle icon-gray-dark icon-xxs mdi mdi-phone text-middle"></span></div>
+            <div class="unit-body">
+                <address class="contact-info"><a href="callto:#" class="link-default link-xs">1-800-1234-567</a><span class="reveal-block text-base link-xs">Mon – Sat: 9:00–18:00</span></address>
+            </div>
+        </div>
+    </li>
+    {% autoescape false %}
+        {{ nav_bar_bottom }}
     {% endautoescape %}
     <!-- Page Content-->
     <main class="page-content">
