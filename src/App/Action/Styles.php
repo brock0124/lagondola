@@ -25,28 +25,13 @@ $nav_bar = '
                         <!-- RD Navbar Toggle-->
                         <button data-rd-navbar-toggle=".rd-navbar-nav-wrap" class="rd-navbar-toggle"><span></span></button>
                         <!-- RD Navbar Brand--><a href="/" class="rd-navbar-brand brand">
-                          <div class="brand-logo"><img src="images/brand-232x49.jpg" alt="" width="232" height="49"/>
+                          <div class="brand-logo"><img src="images/LaGaLogoHeader.png" alt="" width="323" height="63"/>
                           </div></a>
                       </div>
                       <div class="rd-navbar-aside-right">
                         <!-- RD Navbar Aside-->
                         <ul class="list-links list-inline text-left">
-                          <li>
-                            <div class="unit unit-horizontal unit-middle unit-spacing-xs">
-                              <div class="unit-left"><span class="icon icon-circle icon-gray-dark icon-xxs mdi mdi-map-marker text-middle"></span></div>
-                              <div class="unit-body">
-                                <address class="contact-info"><a href="#" class="link-default link-xs"> {{ address }} <br class="visible-md visible-lg"> {{ state }}</a></address>
-                              </div>
-                            </div>
-                          </li>
-                          <li>
-                            <div class="unit unit-horizontal unit-middle unit-spacing-xs">
-                              <div class="unit-left"><span class="icon icon-circle icon-gray-dark icon-xxs mdi mdi-phone text-middle"></span></div>
-                              <div class="unit-body">
-                                <address class="contact-info"><a href="callto:#" class="link-default link-xs">1-800-1234-567</a><span class="reveal-block text-base link-xs">Mon – Sat: 9:00–18:00</span></address>
-                              </div>
-                            </div>
-                          </li>
+                          
                           <li>
                             <ul class="list-inline list-inline-sm">
                               <li><a href="#" class="link-silver-light"><span class="icon icon-sm-mod-1 fa fa-instagram"></span></a></li>
@@ -181,7 +166,7 @@ $locations_css_top = '
                         <!-- RD Navbar Toggle-->
                         <button data-rd-navbar-toggle=".rd-navbar-nav-wrap" class="rd-navbar-toggle"><span></span></button>
                         <!-- RD Navbar Brand--><a href="/" class="rd-navbar-brand brand">
-                          <div class="brand-logo"><img src="images/brand-232x49.jpg" alt="" width="232" height="49"/>
+                          <div class="brand-logo"><img src="images/LaGaLogoHeader.png" alt="" width="232" height="49"/>
                           </div></a>
                       </div>
                       <div class="rd-navbar-aside-right">
@@ -305,10 +290,7 @@ $locations_css_bottom = '
 ';
 
 $custom_css = '
-      <style type="text/css">  body {
-    background: #2b2c2f !important;
-    color: whitesmoke !important;
-  }
+      <style type="text/css">  
 
   body {
     background: #2b2c2f !important;
@@ -317,7 +299,7 @@ $custom_css = '
 
   p {
     color: white;
-  !important;
+    !important;
   }
 
   h3 {
@@ -334,4 +316,11 @@ $custom_css = '
     color: white;
   !important;
   }</style>
+';
+
+$menu = '
+.menu{
+    width: 60%;
+    margin: 0 20%;
+}
 ';

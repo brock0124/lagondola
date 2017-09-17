@@ -43,13 +43,13 @@ class HomePageAction implements ServerMiddlewareInterface
         $data['state'] = 'Washington, IL, 61571';
 
         $data['about'] = "Established in 1982, LaGondola Spaghetti House was based on the founder’s simple belief in 
-        homemade food and excellent service. For over 30 years, nothing has changed. Wholesome ingredients prepared 
+        homemade food and excellent service. For over 35 years, nothing has changed. Wholesome ingredients prepared 
         fresh everyday—from our hot made-from-scratch bread to our signature meat sauce. To us, freshness is everything.
 A great poet once said: “If you bake bread with indifference, you bake a bitter bread that feeds but half of man’s 
-hunger.” With that in mind, our 14 family restaurants have become distinguished by their dedication to one basic 
+hunger.” With that in mind, our 13 family restaurants have become distinguished by their dedication to one basic 
 concept—no shortcuts. As a result, our most valued patrons have long enjoyed authentic Italian tastes, friendly familiar 
 smiles, and incomparable customer value.
-We at LaGondola Spaghetti House are continuing to build upon our rich family Heritage, which for over 29 years still 
+We at LaGondola Spaghetti House are continuing to build upon our rich family Heritage, which for over 35 years still 
 makes us ... The Best Deal in Town.
 ";
     return new HtmlResponse($this->template->render('app::index', $data));

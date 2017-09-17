@@ -27,7 +27,7 @@
         <div class="unit unit-horizontal unit-middle unit-spacing-xs">
             <div class="unit-left"><span class="icon icon-circle icon-gray-dark icon-xxs mdi mdi-map-marker text-middle"></span></div>
             <div class="unit-body">
-                <address class="contact-info"><a href="#" class="link-default link-xs"> {{ address }} <br class="visible-md visible-lg"> {{ state }}</a></address>
+                <address class="contact-info"><a href="#" class="link-default link-xs" style="color: white;"> {{ address }} <br class="visible-md visible-lg" style="color: white;"> {{ state }}</a></address>
             </div>
         </div>
     </li>
@@ -35,7 +35,7 @@
         <div class="unit unit-horizontal unit-middle unit-spacing-xs">
             <div class="unit-left"><span class="icon icon-circle icon-gray-dark icon-xxs mdi mdi-phone text-middle"></span></div>
             <div class="unit-body">
-                <address class="contact-info"><a href="callto:#" class="link-default link-xs">1-800-1234-567</a><span class="reveal-block text-base link-xs">Mon – Sat: 9:00–18:00</span></address>
+                <address class="contact-info"><a href="callto:#" class="link-default link-xs" style="color: white;">{{ phone }}</a><span class="reveal-block text-base link-xs">Mon – Sat: 9:00–18:00</span></address>
             </div>
         </div>
     </li>
@@ -62,11 +62,11 @@
 
 
         <!-- Image alignment-->
-        <section class="bg-white section-50 section-md-80 text-sm-left">
+        <section class="section-50 section-md-80 text-sm-left">
             <div class="shell">
                 <div class="range range-condensed">
                     <!-- Image Left & Right-->
-                    <div class="cell-lg-8">
+                    <div class="cell-lg-12">
                         <div class="offset-top-50 offset-md-top-80">
                             <h4 class="font-default">{{ title }}</h4>
                             <div class="range">
@@ -86,13 +86,11 @@
                             </div>
                         </div>
                         <div class="offset-top-50 offset-md-top-80">
-                            <h4 class="font-default">Image Right</h4>
+                            <hr width="80%">
                             <div class="range range-sm-reverse">
-                                <div id="menu" class="cell-sm-6">
-                                    <figure>
-                                        <figure class="offset-top-30"><img src="images/lg-pekin-menu-test.png" alt="" width="770" height="485" class="img-responsive"/>
+                                <div id="menu" >
+                                        <figure class="offset-top-30"><img class="menu-custom" src="images/PeoriaMenu.jpg"/>
                                         </figure>
-                                    </figure>
                                 </div>
                             </div>
                     </div>

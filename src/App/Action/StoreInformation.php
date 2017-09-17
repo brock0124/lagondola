@@ -184,37 +184,37 @@ class StoreInformation
     {
         switch ($location) {
             case 'bartonville':
-                return "Bartonville LaGondola";
+                return "LaGondola Bartonville";
                 break;
             case 'bloomington-vernon':
-                return "Bloomington LaGondola - Vernon St.";
+                return "LaGondola Bloomington - Vernon St.";
                 break;
             case 'bloomington-main' :
-                return "Bloomington LaGondola - South Main St.";
+                return "LaGondola Bloomington - South Main St.";
                 break;
             case 'chillicothe':
-                return "Chillicothe LaGondola";
+                return "LaGondola Chillicothe";
                 break;
             case 'creve-coeur':
-                return "Creve Coeur LaGondola";
+                return "LaGondola reve Coeur";
                 break;
             case 'galesburg':
-                return "Galesburg LaGondola";
+                return "LaGondola Galesburg ";
                 break;
             case 'kewanee':
-                return "Kewanee LaGondola";
+                return "LaGondola Kewanee";
                 break;
             case 'morton':
-                return "Morton LaGondola";
+                return "LaGondola Morton";
                 break;
             case 'peoria':
-                return "Peoria LaGondola";
+                return "LaGondola Peoria ";
                 break;
             case 'pekin':
-                return "Pekin LaGondola";
+                return "LaGondola Pekin";
                 break;
             case 'quincy':
-                return "Quincy LaGondola";
+                return "LaGondola Quincy";
                 break;
         }
     }

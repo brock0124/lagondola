@@ -33,6 +33,8 @@ class AboutAction implements ServerMiddlewareInterface
 
         $data['nav_bar'] = $nav_bar;
 
+        $data['style'] = $custom_css;
+
         $data['title'] = "LaGondola Spaghetti House";
 
         $data['address'] =  "2233 Hawthorne Pl";

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en" class="wide wow-animation">
+<head>
+    <!-- Site Title-->
+    <title>{{ title }}</title>
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <!-- Stylesheets-->
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Changa+One:400,400i%7CGrand+Hotel%7CLato:300,400,400italic,700">
+    <link rel="stylesheet" href="css/style.css">
+    <!--[if lt IE 10]>
+    <div style="background: #212121; padding: 10px 0; box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3); clear: both; text-align:center; position: relative; z-index:1;"><a href="http://windows.microsoft.com/en-US/internet-explorer/"><img src="images/ie8-panel/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."></a></div>
+    <script src="js/html5shiv.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<!-- Page-->
+<div class="page text-center">
+    <!-- Page Header-->
+    {% autoescape false %}
+        {{ nav_bar_top }}
+    {% endautoescape %}
+    <li>
+        <div class="unit unit-horizontal unit-middle unit-spacing-xs">
+            <div class="unit-left"><span class="icon icon-circle icon-gray-dark icon-xxs mdi mdi-map-marker text-middle"></span></div>
+            <div class="unit-body">
+                <address class="contact-info"><a href="#" class="link-default link-xs" style="color: white;"> {{ address }} <br class="visible-md visible-lg" style="color: white;"> {{ state }}</a></address>
+            </div>
+        </div>
+    </li>
+    <li>
+        <div class="unit unit-horizontal unit-middle unit-spacing-xs">
+            <div class="unit-left"><span class="icon icon-circle icon-gray-dark icon-xxs mdi mdi-phone text-middle"></span></div>
+            <div class="unit-body">
+                <address class="contact-info"><a href="callto:#" class="link-default link-xs" style="color: white;">{{ phone }}</a><span class="reveal-block text-base link-xs">Mon – Sat: 9:00–18:00</span></address>
+            </div>
+        </div>
+    </li>
+    {% autoescape false %}
+        {{ nav_bar_bottom }}
+    {% endautoescape %}
+    <!-- Page Content-->
+    <main class="page-content">
+        <!-- Breadcrumbs & Page title-->
+        <section class="text-center section-34 section-sm-60 section-md-top-100 section-md-bottom-105 bg-image bg-image-breadcrumbs">
+            <div class="shell shell-fluid">
+                <div class="range range-condensed">
+                    <div class="cell-xs-12 cell-xl-preffix-1 cell-xl-11">
+                        <p class="h3 text-white">{{ title }}</p>
+                        <ul class="breadcrumbs-custom offset-top-10">
+                            <li><a href="/">Home</a></li>
+                            <li><a href="#">Locations</a></li>
+                            <li class="active">{{ title }}</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</div>
+
+    <h4>{{ title }}</h4>
+    <img style="position: absolute" src="images/PeoriaMenu.jpg" alt="" width="1440" height="770"/>
+
+<div class="page text-center">
+    <!-- Page Footer-->
+    <footer class="page-foot text-center text-lg-left footer-light context-dark">
+        <section class="text-center section-50 section-sm-bottom-100">
+            <div class="shell">
+                <h5>Contact us</h5>
+                <div class="range range-xs-center offset-top-15">
+                    <div class="cell-sm-10 cell-md-8">
+                        <div class="inset-lg-left-50 inset-lg-right-50">
+                            <!-- RD Mailform-->
+                            <form data-form-output="form-output-global" data-form-type="contact" method="post" action="/contact" class="form-contact-line text-left">
+                                <div class="form-inline-flex">
+                                    <div class="form-group">
+                                        <label for="contact-name-2" class="form-label form-label-outside">First name</label>
+                                        <input id="contact-name-2" type="text" placeholder="Your First Name" name="fname" data-constraints="@Required" class="form-control">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="contact-username" class="form-label form-label-outside">last name</label>
+                                        <input id="contact-username" type="text" placeholder="Your Last Name" name="lname" data-constraints="@Required" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="form-group offset-top-15">
+                                    <label for="message" class="form-label form-label-outside">your message</label>
+                                    <textarea id="message" placeholder="Write your message here" name="message" data-constraints="@Required" class="form-control"></textarea>
+                                </div>
+                                <div>
+                                    <input id="location" type="hidden" name="location" value="{{ location }}" data-constraints="@Required" class="form-control">
+                                </div>
+                                <div class="offset-top-15">
+                                    <div class="form-inline-flex">
+                                        <div class="form-group">
+                                            <label for="contact-email-2" class="form-label form-label-outside">E-mail</label>
+                                            <input id="contact-email-2" type="email" placeholder="Enter your email" name="email" data-constraints="@Email @Required" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <button type="submit" class="btn btn-primary btn-fullwidth">Send message</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </footer>
+</div>
+<!-- Global Mailform Output-->
+<div id="form-output-global" class="snackbars"></div>
+<!-- PhotoSwipe Gallery-->
+<div tabindex="-1" role="dialog" aria-hidden="true" class="pswp">
+    <div class="pswp__bg"></div>
+    <div class="pswp__scroll-wrap">
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+        <div class="pswp__ui pswp__ui--hidden">
+            <div class="pswp__top-bar">
+                <div class="pswp__counter"></div>
+                <button title="Close (Esc)" class="pswp__button pswp__button--close"></button>
+                <button title="Share" class="pswp__button pswp__button--share"></button>
+                <button title="Toggle fullscreen" class="pswp__button pswp__button--fs"></button>
+                <button title="Zoom in/out" class="pswp__button pswp__button--zoom"></button>
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+            <button title="Previous (arrow left)" class="pswp__button pswp__button--arrow--left"></button>
+            <button title="Next (arrow right)" class="pswp__button pswp__button--arrow--right"></button>
+            <div class="pswp__caption">
+                <div class="pswp__caption__cent"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Java script-->
+<script src="js/core.min.js"></script>
+<script src="js/script.js"></script>
+
+
+
+</body>
+{% autoescape false %}
+    {{ style }}
+{% endautoescape %}
+</html>
