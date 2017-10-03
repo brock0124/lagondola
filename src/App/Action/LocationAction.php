@@ -36,7 +36,6 @@ class LocationAction implements ServerMiddlewareInterface
 
     public function process(ServerRequestInterface $request, DelegateInterface $delegate)
     {
-        //die(var_dump($request->getUri()));
         include 'Styles.php';
 
         $location = strtolower($_GET['location']);
@@ -70,6 +69,8 @@ class LocationAction implements ServerMiddlewareInterface
         $data['hours'] = $store->getHours();
 
         $data['map'] = $store->getMap();
+
+        $data['pics'] = strtolower($_GET['location']);
 
         //$data['menu'] = $menu->getLocationMenu($location);
 

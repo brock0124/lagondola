@@ -82,7 +82,7 @@ $nav_bar = '
                         </li>
                       </ul>
                     </li>
-                    <li><a href="/locations.html">Locations</a>
+                    <li><a href="#locations">Locations</a>
                       <!-- RD Navbar Dropdown-->
                       <ul class="rd-navbar-dropdown">
                         <li><a href="/location?location=bartonville">Bartonville</a>
@@ -109,7 +109,7 @@ $nav_bar = '
                         </li>
                       </ul>
                     </li>
-                    <li><a href="contacts.html">Contacts</a>
+                    <li><a href="contacts.html">Employment</a>
                     </li>
                   </ul>
                   <div class="rd-navbar-aside-right">
@@ -189,8 +189,7 @@ $locations_css_bottom = '
                 <!-- RD Navbar Nav-->
                 <div class="rd-navbar-nav-wrap">
                   <!-- RD Navbar Shop-->
-                  <div class="rd-navbar-shop"><a href="shop-cart.html" class="link link-shop link-default"><span class="big text-gray-light">Cart</span><span class="icon icon-sm mdi mdi-cart-outline"></span><span class="label-inline big text-white">2</span></a></div>
-                  <!-- RD Navbar Nav-->
+                   <!-- RD Navbar Nav-->
                   <ul class="rd-navbar-nav">
                     <li class="active"><a href="/">Home</a>
                     </li>

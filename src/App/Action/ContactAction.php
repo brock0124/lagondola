@@ -59,14 +59,14 @@ pasting the email address below into a new email. Not creating a new message wil
             'port' => 1025
         ]);*/
 
-        $options = new SmtpOptions([
+        /*$options = new SmtpOptions([
             'name' => 'mail.lagondola.local',
             'host' => 'smtp://127.0.0.1',
             'port' => 1025,
-        ]);
+        ]);*/
 
         //Production SMTP Options
-        /*$options = new SmtpOptions([
+        $options = new SmtpOptions([
             'name' => 'gmail.com',
             'host' => 'smtp.gmail.com',
             'connection_class' => 'login',
@@ -74,9 +74,10 @@ pasting the email address below into a new email. Not creating a new message wil
             'connection_config' => [
                 'username' => 'lagondolaspaghettihouse@gmail.com',
                 //RE-INSERT PASSWORD BEFORE BEGINNING
+                'password' => 'Torpedo.1',
                 'ssl' => 'ssl',
             ],
-        ]);*/
+        ]);
 
         $transport->setOptions($options);
 
