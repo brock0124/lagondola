@@ -15,33 +15,27 @@
     <div style="background: #212121; padding: 10px 0; box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3); clear: both; text-align:center; position: relative; z-index:1;"><a href="http://windows.microsoft.com/en-US/internet-explorer/"><img src="images/ie8-panel/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."></a></div>
     <script src="js/html5shiv.min.js"></script>
     <![endif]-->
+    <!-- Piwik -->
+    <script type="text/javascript">
+        var _paq = _paq || [];
+        /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+        _paq.push(['trackPageView']);
+        _paq.push(['enableLinkTracking']);
+        (function() {
+            var u="//lagondola.dev/admin/piwik/";
+            _paq.push(['setTrackerUrl', u+'piwik.php']);
+            _paq.push(['setSiteId', '1']);
+            var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+            g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+        })();
+    </script>
+    <!-- End Piwik Code -->
 </head>
 <body>
 <!-- Page-->
 <div class="page text-center">
     <!-- Page Header-->
-    {% autoescape false %}
-        {{ nav_bar_top }}
-    {% endautoescape %}
-    <li>
-        <div class="unit unit-horizontal unit-middle unit-spacing-xs">
-            <div class="unit-left"><span class="icon icon-circle icon-gray-dark icon-xxs mdi mdi-map-marker text-middle"></span></div>
-            <div class="unit-body">
-                <address class="contact-info"><a href="#" class="link-default link-xs" style="color: white;"> {{ address }} <br class="visible-md visible-lg" style="color: white;"> {{ state }}</a></address>
-            </div>
-        </div>
-    </li>
-    <li>
-        <div class="unit unit-horizontal unit-middle unit-spacing-xs">
-            <div class="unit-left"><span class="icon icon-circle icon-gray-dark icon-xxs mdi mdi-phone text-middle"></span></div>
-            <div class="unit-body">
-                <address class="contact-info"><a href="callto:#" class="link-default link-xs" style="color: white;">{{ phone }}</a><span class="reveal-block text-base link-xs">Mon – Sat: 9:00–18:00</span></address>
-            </div>
-        </div>
-    </li>
-    {% autoescape false %}
-        {{ nav_bar_bottom }}
-    {% endautoescape %}
+    {% include '@layout/locations-nav.html.twig' %}
     <!-- Page Content-->
     <main class="page-content">
         <!-- Breadcrumbs & Page title-->
@@ -81,7 +75,7 @@
                                             <li> <h5><b>Phone</b>: {{ phone }}</h5></li>
                                         </ul>
                                         <br>
-                                    <h4>Thank you for eating at {{ title }}!</h4>
+                                    <h4>Thank you for choosing {{ title }}!</h4>
                                     </div>
                                 </div>
                                 <br>
@@ -157,9 +151,12 @@
                 </div>
             </div>
         </section>
-
     </footer>
 </div>
+<div class="row text-center">
+    {% include '@layout/footer.html.twig' %}
+</div>
+
 <!-- Global Mailform Output-->
 <div id="form-output-global" class="snackbars"></div>
 <!-- PhotoSwipe Gallery-->
@@ -207,4 +204,24 @@
 {% autoescape false %}
     {{ style }}
 {% endautoescape %}
+
+
+
+<!-- Piwik -->
+<script type="text/javascript">
+    var _paq = _paq || [];
+    /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
+    (function() {
+        var u="//caldwellnetworks.com/admin/piwik/";
+        _paq.push(['setTrackerUrl', u+'piwik.php']);
+        _paq.push(['setSiteId', '3']);
+        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+        g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+    })();
+</script>
+<!-- End Piwik Code -->
+
+
 </html>

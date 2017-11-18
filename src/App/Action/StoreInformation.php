@@ -39,7 +39,7 @@ class StoreInformation
             case 'chillicothe':
                 return "Mon - Sat: 10:30am - 9pm";
                 break;
-            case 'creve-coeur':
+            case 'creve-couer':
                 return "Mon - Sat: 10:30am - 9pm";
                 break;
             case 'galesburg':
@@ -78,7 +78,7 @@ class StoreInformation
             case 'chillicothe':
                 return "1122 North 4th Street";
                 break;
-            case 'creve-coeur':
+            case 'creve-couer':
                 return "115 South Main Street";
                 break;
             case 'galesburg':
@@ -117,8 +117,8 @@ class StoreInformation
             case 'chillicothe':
                 return "Chillicothe, IL 61523";
                 break;
-            case 'creve-coeur':
-                return "Creve Coeur, IL 61610";
+            case 'creve-couer':
+                return "Creve couer, IL 61610";
                 break;
             case 'galesburg':
                 return "Galesburg, IL 61401";
@@ -156,7 +156,7 @@ class StoreInformation
             case 'chillicothe':
                 return "309.274.5488";
                 break;
-            case 'creve-coeur':
+            case 'creve-couer':
                 return "309.694.7676";
                 break;
             case 'galesburg':
@@ -195,8 +195,8 @@ class StoreInformation
             case 'chillicothe':
                 return "LaGondola Chillicothe";
                 break;
-            case 'creve-coeur':
-                return "LaGondola reve Coeur";
+            case 'creve-couer':
+                return "LaGondola Creve Couer";
                 break;
             case 'galesburg':
                 return "LaGondola Galesburg ";
@@ -234,7 +234,7 @@ class StoreInformation
             case 'chillicothe':
                 return '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3014.8241779948294!2d-89.48911628508085!3d40.91960083282679!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880a499db35bd709%3A0x6f83352b90537844!2sLa+Gondola+Spaghetti+House!5e0!3m2!1sen!2sus!4v1498938409363" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>';
                 break;
-            case 'creve-coeur':
+            case 'creve-couer':
                 return '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3027.2991862032172!2d-89.60361708509!3d40.645334849629094!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880a58585d191b65%3A0x987147ab4de804f1!2sLa+Gondola+Spaghetti+House!5e0!3m2!1sen!2sus!4v1498938523818" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>';
                 break;
             case 'galesburg':
@@ -273,7 +273,7 @@ class StoreInformation
             case 'chillicothe':
 
                 break;
-            case 'creve-coeur':
+            case 'creve-couer':
 
                 break;
             case 'galesburg':

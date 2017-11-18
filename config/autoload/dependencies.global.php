@@ -5,6 +5,7 @@ use Zend\Expressive\Container;
 use Zend\Expressive\Delegate;
 use Zend\Expressive\Helper;
 use Zend\Expressive\Middleware;
+use Zend\Db\Adapter;
 
 return [
     // Provides application-wide services.
@@ -31,6 +32,7 @@ return [
             Helper\UrlHelper::class           => Helper\UrlHelperFactory::class,
             Helper\UrlHelperMiddleware::class => Helper\UrlHelperMiddlewareFactory::class,
 
+            Zend\Db\Adapter\Adapter::class => Zend\Db\Adapter\AdapterServiceFactory::class,
             Zend\Stratigility\Middleware\ErrorHandler::class => Container\ErrorHandlerFactory::class,
             Middleware\ErrorResponseGenerator::class         => Container\ErrorResponseGeneratorFactory::class,
             Middleware\NotFoundHandler::class                => Container\NotFoundHandlerFactory::class,

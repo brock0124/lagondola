@@ -16,13 +16,26 @@
     <div style="background: #212121; padding: 10px 0; box-shadow: 3px 3px 5px 0 rgba(0,0,0,.3); clear: both; text-align:center; position: relative; z-index:1;"><a href="http://windows.microsoft.com/en-US/internet-explorer/"><img src="images/ie8-panel/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today."></a></div>
     <script src="js/html5shiv.min.js"></script>
 		<![endif]-->
+    <!-- Piwik -->
+    <script type="text/javascript">
+        var _paq = _paq || [];
+        /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+        _paq.push(['trackPageView']);
+        _paq.push(['enableLinkTracking']);
+        (function() {
+            var u="//lagondola.dev/admin/piwik/";
+            _paq.push(['setTrackerUrl', u+'piwik.php']);
+            _paq.push(['setSiteId', '1']);
+            var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+            g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+        })();
+    </script>
+    <!-- End Piwik Code -->
   </head>
   <body>
     <!-- Page-->
     <div class="page text-center">
-        {% autoescape false %}
-            {{ nav_bar }}
-        {% endautoescape %}
+        {% include '@layout/main-nav.html.twig' %}
       <!-- Page Content-->
       <main class="page-content">
         <!-- Swiper variant 3-->
@@ -36,8 +49,10 @@
                     <div class="shell">
                       <div class="range range-sm-center">
                         <div class="cell-sm-10 cell-lg-8">
-                          <h2 data-caption-animate="fadeInUpSmall" data-caption-delay="400" class="text-uppercase text-white offset-top-50">Our Bread starts like ths each morning</h2>
-                          <p data-caption-animate="fadeInUpSmall" data-caption-delay="700" class="text-white offset-top-18 li"><ul><li> - Small batches baked fresh from scratch in house</li><li> - Simple wholesome ingredients</li><li> - No preservatives</li></ul></p><a href="/locations.html" data-caption-animate="fadeInUpSmall" data-caption-delay="1000" class="btn btn-secondary btn-md btn-shape-circle offset-top-20">Find Location</a>
+                          <h2 data-caption-animate="fadeInUpSmall" data-caption-delay="400" class="text-uppercase text-white offset-top-90">Our Bread starts like ths each morning</h2>
+                          <h5 data-caption-animate="fadeInUpSmall" data-caption-delay="700" class="text-white offset-top-18">Small batches baked fresh from scratch in house</h5>
+                          <h5 data-caption-animate="fadeInUpSmall" data-caption-delay="700" class="text-white offset-top-18">Simple wholesome ingredients</h5>
+                          <h5 data-caption-animate="fadeInUpSmall" data-caption-delay="700" class="text-white offset-top-18">No preservatives</h5><a href="/#locations" data-caption-animate="fadeInUpSmall" data-caption-delay="1000" class="btn btn-secondary btn-md btn-shape-circle offset-top-20">Find Location</a>
                         </div>
                       </div>
                     </div>
@@ -46,23 +61,23 @@
                 <div data-slide-bg="images/home-slide-4-1920x800.jpg" class="swiper-slide">
                   <div class="swiper-slide-caption slide-caption-2 text-center">
                     <div class="shell">
-                      <div class="TextBox range range-sm-center">
+                      <div class="range range-sm-center">
                         <div class="cell-sm-10 cell-lg-8">
                           <h2 data-caption-animate="fadeInUpSmall" data-caption-delay="400" class="text-uppercase text-white offset-top-0">Let our family feed your family</h2>
-                          <p data-caption-animate="fadeInUpSmall" data-caption-delay="700" class="text-white offset-top-18">Looking for fresh and tasty breakfasts and lunches? At Food Delivery, you can order any kind of morning snack from local restaurants at reasonable prices without any extra charges.</p><a href="/locations.html" data-caption-animate="fadeInUpSmall" data-caption-delay="1000" class="btn btn-secondary btn-md btn-shape-circle offset-top-20">Find Location</a>
+                          <p data-caption-animate="fadeInUpSmall" data-caption-delay="700" class="text-white offset-top-18">Looking for a fast and easy way to feed to your family? Let us do the cooking tonight!</p><a href="/#locations" data-caption-animate="fadeInUpSmall" data-caption-delay="1000" class="btn btn-secondary btn-md btn-shape-circle offset-top-20">Find Location</a>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div data-slide-bg="images/home-slide-2-1920x800.jpg" class="swiper-slide">
+                <div data-slide-bg="images/front_2.jpg" class="swiper-slide">
                   <div class="swiper-slide-caption slide-caption-2 text-center">
                     <div class="shell">
-                      <div class="TextBox range range-sm-center">
+                      <div class="range range-sm-center">
                         <div class="cell-sm-10 cell-lg-8">
                           <h5 data-caption-animate="fadeInUpSmall" data-caption-delay="100" class="text-italic font-secondary text-white">A Variety of Dishes</h5>
                           <h2 data-caption-animate="fadeInUpSmall" data-caption-delay="400" class="text-uppercase text-white offset-top-0">pizzas and seafood</h2>
-                          <p data-caption-animate="fadeInUpSmall" data-caption-delay="700" class="text-white offset-top-18">In our menu you can find lots of tasty and interesting dishes, including pizzas of all kinds. We also offer a wide range of seafood dishes, even if you are just looking for an affordable snack.</p><a href="/locations.html" data-caption-animate="fadeInUpSmall" data-caption-delay="1000" class="btn btn-secondary btn-md btn-shape-circle offset-top-20">Find Location</a>
+                          <p data-caption-animate="fadeInUpSmall" data-caption-delay="700" class="text-white offset-top-18">In our menu you can find lots of tasty and interesting dishes, including pizzas of all kinds. We also offer a wide range of seafood dishes, even if you are just looking for an affordable snack.</p><a href="/#locations" data-caption-animate="fadeInUpSmall" data-caption-delay="1000" class="btn btn-secondary btn-md btn-shape-circle offset-top-20">Find Location</a>
                         </div>
                       </div>
                     </div>
@@ -80,11 +95,11 @@
           <div class="shell text-center">
             <h3>Our Mission</h3>
             <div class="range range-xs-center">
-              <p>{{ about }}</p>
+              <p><span style="font-size: medium;">{{ about }}</span></p>
             </div>
           </div>
         </section>
-        <hr width="80%">
+        <hr width="90%">
         <br>
 
         <!-- Test Locations Index Begin -->
@@ -310,98 +325,7 @@
         </section>
 
         <!-- Test Locations Index End -->
-        <section class="section-50 section-sm-top-90 section-sm-bottom-100 bg-image-6">
-          <div class="shell text-center" >
-            <h3>Locations</h3>
-            <div class="range range-xs-center">
-              <div class="cell-sm-2 cell-md-3">
-                <div class="menu-variant-1"><img src="images/BLONO_LOGO.png" alt="" width="310" height="260" class="img-responsive reveal-inline-block"/>
-                  <div class="caption">
-                    <h5 class="title"><a href="menu-single.html" class="link-white">Bartonville</a></h5>
-                  </div>
-                </div>
-              </div>
-              <div class="cell-sm-2 cell-md-3 offset-top-50 offset-sm-top-0">
-                <div class="menu-variant-1"><img src="images/burger-7-310x260.png" alt="" width="310" height="260" class="img-responsive reveal-inline-block"/>
-                  <div class="caption">
-                     <h5 class="title"><a href="menu-single.html" class="link-white">Bloomington - Main</a></h5>
-                  </div>
-                </div>
-              </div>
-              <div class="cell-sm-2 cell-md-3 offset-top-50 offset-md-top-0">
-                <div class="menu-variant-1"><img src="images/pizza-7-310x260.png" alt="" width="310" height="260" class="img-responsive reveal-inline-block"/>
-                  <div class="caption">
-                    <h5 class="title"><a href="menu-single.html" class="link-white">Bloomington - Vernon</a></h5>
-                  </div>
-                </div>
-              </div>
-              <div class="cell-sm-2 cell-md-3 offset-top-0">
-                <div class="menu-variant-1"><img src="images/barbecue-7-310x260.png" alt="" width="310" height="260" class="img-responsive reveal-inline-block"/>
-                  <div class="caption">
-                    <h5 class="title"><a href="menu-single.html" class="link-white">Chillicothe</a></h5>
-                  </div>
-                </div>
-              </div>
-              <div class="cell-sm-2 cell-md-3 offset-top-50">
-                <div class="menu-variant-1"><img src="images/sandwich-7-310x260.png" alt="" width="310" height="260" class="img-responsive reveal-inline-block"/>
-                  <div class="caption">
-                    <h5 class="title"><a href="menu-single.html" class="link-white">Creve Couer</a></h5>
-                  </div>
-                </div>
-              </div>
-              <div class="cell-sm-2 cell-md-3 offset-top-50">
-                <div class="menu-variant-1"><img src="images/mexican-7-310x260.png" alt="" width="310" height="260" class="img-responsive reveal-inline-block"/>
-                  <div class="caption">
-                    <h5 class="title"><a href="menu-single.html" class="link-white">Galesburg</a></h5>
-                  </div>
-                </div>
-              </div>
-              <div class="cell-sm-2 cell-md-3 offset-top-50">
-                <div class="menu-variant-1"><img src="images/sandwich-7-310x260.png" alt="" width="310" height="260" class="img-responsive reveal-inline-block"/>
-                  <div class="caption">
-                    <h5 class="title"><a href="menu-single.html" class="link-white">Creve Couer</a></h5>
-                  </div>
-                </div>
-              </div>
-              <div class="cell-sm-2 cell-md-3 offset-top-50">
-                <div class="menu-variant-1"><img src="images/mexican-7-310x260.png" alt="" width="310" height="260" class="img-responsive reveal-inline-block"/>
-                  <div class="caption">
-                    <h5 class="title"><a href="menu-single.html" class="link-white">Galesburg</a></h5>
-                  </div>
-                </div>
-              </div>
-              <div class="cell-sm-2 cell-md-3 offset-top-50">
-                <div class="menu-variant-1"><img src="images/sandwich-7-310x260.png" alt="" width="310" height="260" class="img-responsive reveal-inline-block"/>
-                  <div class="caption">
-                    <h5 class="title"><a href="menu-single.html" class="link-white">Creve Couer</a></h5>
-                  </div>
-                </div>
-              </div>
-              <div class="cell-sm-2 cell-md-3 offset-top-50">
-                <div class="menu-variant-1"><img src="images/mexican-7-310x260.png" alt="" width="310" height="260" class="img-responsive reveal-inline-block"/>
-                  <div class="caption">
-                    <h5 class="title"><a href="menu-single.html" class="link-white">Galesburg</a></h5>
-                  </div>
-                </div>
-              </div>
-              <div class="cell-sm-2 cell-md-3 offset-top-50">
-                <div class="menu-variant-1"><img src="images/sandwich-7-310x260.png" alt="" width="310" height="260" class="img-responsive reveal-inline-block"/>
-                  <div class="caption">
-                    <h5 class="title"><a href="menu-single.html" class="link-white">Creve Couer</a></h5>
-                  </div>
-                </div>
-              </div>
-              <div class="cell-sm-2 cell-md-3 offset-top-50">
-                <div class="menu-variant-1"><img src="images/mexican-7-310x260.png" alt="" width="310" height="260" class="img-responsive reveal-inline-block"/>
-                  <div class="caption">
-                    <h5 class="title"><a href="menu-single.html" class="link-white">Galesburg</a></h5>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <hr width="80%">
+        <hr width="90%">
         <section class="section-50 section-sm-100">
           <div class="shell text-center">
             <div class="range range-md-center">
@@ -585,16 +509,6 @@
           </div>
         </section>
         <section>
-          <!-- RD Google Map-->
-          <div data-zoom="15" data-y="40.643180" data-x="-73.9874068" data-styles="" class="rd-google-map rd-google-map__model">
-            <ul class="map_locations">
-              <li data-y="40.643180" data-x="-73.9874068">
-                <p><span class="icon"><img src="images/gmap-24x34.png" alt="" width="24" height="34"/></span>267 Park Avenue New York, NY 90210</p>
-              </li>
-            </ul>
-          </div>
-        </section>
-      </main>
       <!-- Page Footer-->
       <footer class="page-foot text-center text-lg-left footer-light context-dark">
         <section class="section-top-45 section-bottom-40">
@@ -728,5 +642,25 @@
     </div>
 
   </div>
+
+
+
+  <!-- Piwik -->
+  <script type="text/javascript">
+      var _paq = _paq || [];
+      /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+      _paq.push(['trackPageView']);
+      _paq.push(['enableLinkTracking']);
+      (function() {
+          var u="//caldwellnetworks.com/admin/piwik/";
+          _paq.push(['setTrackerUrl', u+'piwik.php']);
+          _paq.push(['setSiteId', '3']);
+          var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+          g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+      })();
+  </script>
+  <!-- End Piwik Code -->
+
+
 
 </html>
