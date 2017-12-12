@@ -73,7 +73,7 @@ class StoreInformation
                 return "1501 Vernon Avenue";
                 break;
             case 'bloomington-main' :
-                return "501 South Main Street";
+                return "509 South Main Street";
                 break;
             case 'chillicothe':
                 return "1122 North 4th Street";

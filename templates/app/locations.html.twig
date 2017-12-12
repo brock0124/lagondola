@@ -72,7 +72,7 @@
                                         <ul class="list-marked">
                                             <li> <h5><b>{{ address }} <br> {{ state }}</b></h5></li>
                                             <li> <h5><b>Hours</b>: {{ hours }}</h5></li>
-                                            <li> <h5><b>Phone</b>: {{ phone }}</h5></li>
+                                            <li> <h5><b>Phone</b>: <a href="tel:{{ phone }}">{{ phone }}</a></h5></li>
                                         </ul>
                                         <br>
                                     <h4>Thank you for choosing {{ title }}!</h4>
@@ -92,11 +92,11 @@
                                     <br><br>
                                     <img class="menu-custom img-border" style=" border-radius: 5px;" src="images/{{ pics }}/5.jpg"/>
                                     <br><br>
-                                    <img class="menu-custom img-border" style=" border-radius: 5px;" src="images/{{ pics }}/3.jpg"/>
-                                    <br><br>
-                                    <img class="menu-custom img-border" style=" border-radius: 5px;" src="images/{{ pics }}/2.jpg"/>
+                                    <img class="menu-custom img-border" style=" border-radius: 5px;" src="images/{{ pics }}/4.jpg"/>
                                     <br><br>
                                     <img class="menu-custom img-border" style=" border-radius: 5px;" src="images/{{ pics }}/1.jpg"/>
+                                    <br><br>
+                                    <img class="menu-custom img-border" style=" border-radius: 5px;" src="images/{{ pics }}/3.jpg"/>
                                     <br><br>
                                 </div>
                             </div>
@@ -111,6 +111,7 @@
     <footer class="page-foot text-center text-lg-left footer-light context-dark">
         <section class="text-center section-50 section-sm-bottom-100">
             <div class="shell">
+                <h5>{{ title }}</h5>
                 <h5>Questions, comments, concerns?<br>Let us know by filling out the form below!</h5>
                 <div class="range range-xs-center offset-top-15">
                     <div class="cell-sm-10 cell-md-8">
