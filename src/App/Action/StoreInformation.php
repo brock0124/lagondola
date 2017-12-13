@@ -20,6 +20,7 @@ class StoreInformation
         $store->setState($this->addressBottom($location));
         $store->setPhone($this->phone($location));
         $store->setTitle($this->title($location));
+        $store->setFacebook($this->facebook($location));
 
         return $store;
     }
@@ -254,6 +255,45 @@ class StoreInformation
                 break;
             case 'quincy':
                 return '<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3059.671144366796!2d-91.40575878511373!3d39.92637499324008!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87ddf70220aadfab%3A0x767bb5c86115e2bd!2sLa+Gondola+Spaghetti+House!5e0!3m2!1sen!2sus!4v1498939317582" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>';
+                break;
+        }
+    }
+
+    public function facebook($location)
+    {
+        switch ($location) {
+            case 'bartonville':
+                return 'https://www.facebook.com/pages/La-Gondola-Spaghetti-House/117841298241600';
+                break;
+            case 'bloominton-vernon':
+                return 'https://www.facebook.com/LaGondolaBloomington/';
+                break;
+            case 'bloomington-main' :
+                return 'https://www.facebook.com/pages/Lagondola-Spagheti-House/145046252182400';
+                break;
+            case 'chillicothe':
+                return 'https://www.facebook.com/pages/Lagondola-Spaghetti-House/117229064962526';
+                break;
+            case 'creve-couer':
+                return 'https://www.facebook.com/lagondolaspaghettihousecrevecoeur/';
+                break;
+            case 'galesburg':
+                return 'https://www.facebook.com/pages/La-Gondola-Spaghetti-House/117589651600065';
+                break;
+            case 'kewanee':
+                return 'https://www.facebook.com/pages/Lagondola-Spaghetti-House/117195338299963';
+                break;
+            case 'morton':
+                return 'https://www.facebook.com/Morton-Lagondola-Spaghetti-House-1504884563110572/';
+                break;
+            case 'pekin':
+                return 'https://www.facebook.com/pages/La-Gondola/153176428073360';
+                break;
+            case 'quincy':
+                return 'https://www.facebook.com/pages/Lagondola-Spaghetti-House/120524024627288';
+                break;
+            case 'peoria' :
+                return 'https://www.facebook.com/PeoriaLaGondolaLeonardos/';
                 break;
         }
     }

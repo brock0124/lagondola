@@ -18,6 +18,23 @@ class StoreObject
     private $map;
     private $title;
     private $phone;
+    private $facebook;
+
+    /**
+     * @return mixed
+     */
+    public function getFacebook()
+    {
+        return $this->facebook;
+    }
+
+    /**
+     * @param mixed $facebook
+     */
+    public function setFacebook($facebook)
+    {
+        $this->facebook = $facebook;
+    }
 
     /**
      * @return mixed
@@ -134,6 +151,8 @@ class StoreObject
     {
         $this->title = $title;
     }
+
+
 
 
 

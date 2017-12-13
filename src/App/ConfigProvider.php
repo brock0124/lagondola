@@ -43,6 +43,7 @@ class ConfigProvider
                 Action\LocationAction::class => Action\LocationFactory::class,
                 Action\AboutAction::class => Action\AboutFactory::class,
                 Action\ContactAction::class => Action\ContactFactory::class,
+                Action\EmployAction::class => Action\EmployFactory::class,
             ],
         ];
     }

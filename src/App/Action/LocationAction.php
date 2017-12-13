@@ -46,7 +46,6 @@ class LocationAction implements ServerMiddlewareInterface
 
         $store = new StoreInformation;
         $store = $store->createStore($location);
-        //die(var_dump($store));
 
         $data = [];
 
@@ -69,6 +68,8 @@ class LocationAction implements ServerMiddlewareInterface
         $data['hours'] = $store->getHours();
 
         $data['map'] = $store->getMap();
+
+        $data['facebook'] = $store->getFacebook();
 
         $data['pics'] = strtolower($_GET['location']);
 
